@@ -23,7 +23,7 @@ const Projects = () => {
           <span className="relative -bottom-1 text-themeBlue font-mono text-smallSize font-semibold mr-[10px]">
             03.
           </span>
-          <h2 className="text-sectionHeading">Some Things I've Built</h2>
+          <h2 className="text-sectionHeading">Some Things I&apos;ve Built</h2>
           <div className="block sm:hidden w-full h-[1px] bg-blue-400/20 relative top-[5px] ml-[10px] "></div>
           <div className="hidden sm:block w-full md:w-[200px] lg:w-[300px] h-[1px] bg-blue-400/20 relative top-[5px] ml-[20px]"></div>
         </div>
