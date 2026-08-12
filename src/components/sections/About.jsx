@@ -34,35 +34,21 @@ const About = () => {
             ></div>
           </div>
         </div>
-        <div className="text-secondaryText font-fontParagraph text-base md:text-justify w-full md:max-w-[350px] lg:max-w-[500px]">
+        <div className="text-secondaryText font-fontParagraph text-sm md:text-justify w-full md:max-w-[350px] lg:max-w-[500px]">
           <p className="mb-3">
-            As a Full Stack Developer, I possess an impressive arsenal of skills
-            in <span className="text-themeBlue">HTML</span>,{" "}
-            <span className="text-themeBlue">CSS</span>,{" "}
-            <span className="text-themeBlue">SCSS</span>,{" "}
-            <span className="text-themeBlue">JavaScript</span>,{" "}
-            <span className="text-themeBlue">React</span> ,{" "}
-            <span className="text-themeBlue">Tailwind</span> ,{" "}
-            <span className="text-themeBlue">Redux</span>,{" "}
-            <span className="text-themeBlue">Node.js</span>,{" "}
-            <span className="text-themeBlue">Next.js</span>,{" "}
-            <span className="text-themeBlue">Express.js</span> and{" "}
-            <span className="text-themeBlue">Mongo DB</span>. I excel in
-            designing and maintaining responsive websites that offer a smooth
-            user experience. My expertise lies in crafting dynamic, engaging
-            interfaces through writing clean and optimized code and utilizing
-            cutting-edge development tools and techniques.
-          </p>
-          <p className="mb-3">Presently a FrontEnd intern @ Invsto.com</p>
-          <p className="mb-3">
-            I possess a keen interest in leveraging Data Structures and
-            Algorithms using <span className="text-themeBlue">Java</span>. I
-            actively participate in coding contests to continually refine my
-            skills.
+            I am a Full Stack Developer specializing in{" "}
+            <span className="text-themeBlue">MERN</span>,{" "}
+            <span className="text-themeBlue">TypeScript</span>, and{" "}
+            <span className="text-themeBlue">Tailwind CSS</span>. I build
+            scalable web apps end-to-end, from backend architecture to
+            pixel-perfect, luxury UI/UX. Currently diving deep into AI
+            integration to build smarter, more powerful products.
           </p>
           <p className="mb-3">
-            I am also a team player who thrives in collaborating with
-            cross-functional teams to produce outstanding web applications.
+              Pursued a B.Tech in Electronics and Communication Engineering at Guru Tegh Bahadur Institute of Technology, Delhi (2022–2026).
+          </p>
+          <p className="mb-3">
+            I possess a keen interest in leveraging Data Structures and Algorithms using Java. I actively participate in coding contests to continually refine my skills.
           </p>
           <p className="mb-4">
             Here are a few technologies I’ve been working with recently:

@@ -1,4 +1,4 @@
-import Profile from "../../assets/profile-pic.jpeg";
+import Profile from "../../assets/profile-pic.jpg";
 import ButtonLink from "../shared/ButtonLink";
 import { motion } from "framer-motion";
 
@@ -26,16 +26,16 @@ const Hero = () => {
             viewport={{ once: true }}
             className="text-clamp2 m-0 font-bold text-primaryText font-fontHeading"
           >
-            Yash Gupta.
+            Shreya Chopra.
           </motion.h2>
           <motion.h3
             initial={{ opacity: 0, y: 15 }}
             transition={{ delay: 0.4, duration: 0.5 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-center lg:text-left text-clamp2 text-secondaryText font-bold font-fontHeading"
+            className="text-center lg:text-left text-2xl sm:text-3xl md:text-4xl text-secondaryText font-bold font-fontHeading"
           >
-            Full Stack Developer & DSA Enthusiast
+            Full Stack Developer & AI Enthusiast
           </motion.h3>
           <motion.p
             initial={{ opacity: 0, y: 15 }}
@@ -44,12 +44,12 @@ const Hero = () => {
             viewport={{ once: true }}
             className="text-center lg:text-left m-0 mt-[20px] text-secondaryText font-fontParagraph"
           >
-            I'm a passionate Full Stack developer specialized in building
-            exceptional web apps from New Delhi, India 📍
+            I build scalable web apps end-to-end with the MERN stack,
+            TypeScript, and Tailwind CSS from Delhi, India 📍
           </motion.p>
           <ButtonLink
             content="Checkout My Resume!"
-            url="https://docs.google.com/document/d/1y01YQ-luz50oUWdPYHWLLUC70KulS7nU600p3KfAO8Y/edit?usp=sharing"
+            url="/src/assets/Shreya_Chopra_Resume.pdf"
             classNameBox="mt-[50px]"
             classNameBtn="px-[1.75rem] py-[1rem] text-[14px] tracking-wide"
             blank={true}

@@ -31,9 +31,13 @@ const MainProjectCard = ({
         </p>
 
         <h3 className="text-primaryText font-bold leading-[1.1] text-sectionHeading transition-all duration-200 hover:text-themeBlue font-fontHeading md:mb-[20px]">
-          <a href={demo} target="_blank" rel="noopener noreferrer">
-            {title}
-          </a>
+          {demo ? (
+            <a href={demo} target="_blank" rel="noopener noreferrer">
+              {title}
+            </a>
+          ) : (
+            title
+          )}
         </h3>
 
         <div className="shadow-none md:shadow-aboutShadow transition-all duration-200 relative z-[2] py-[20px] md:p-[25px] rounded text-secondaryText text-base bg-transparent md:bg-[#112240] font-fontParagraph md:hover:shadow-bigShadow">
@@ -68,14 +72,16 @@ const MainProjectCard = ({
           >
             <FiGithub />
           </a>
-          <a
-            href={demo}
-            className="flex justify-center items-center p-[10px] transition-all duration-200 hover:text-themeBlue"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FiExternalLink />
-          </a>
+          {demo && (
+            <a
+              href={demo}
+              className="flex justify-center items-center p-[10px] transition-all duration-200 hover:text-themeBlue"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FiExternalLink />
+            </a>
+          )}
         </div>
       </div>
 
@@ -89,21 +95,31 @@ const MainProjectCard = ({
           gridArea: "1 / 6 / -1 / -1",
         }}
       >
-        <a
-          href={demo}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="h-full"
-        >
-          <div className="group w-full relative max-w-[700px] h-full">
-            <div className="block relative w-full  shadow-aboutShadow  rounded-lg transition-all duration-500  h-full z-[3]">
-              <img
-                className="w-full md:w-full h-full min-h-[400px] bg-no-repeat rounded-lg relative object-cover transition-all duration-500 mix-blend-multiply brightness-50 md:brightness-95   group-hover:mix-blend-normal group-hover:filter-none opacity-85 md:opacity-100 z-[4]"
-                src={image}
-              />
+        {(() => {
+          const content = (
+            <div className="group w-full relative max-w-[700px] h-full">
+              <div className="block relative w-full  shadow-aboutShadow  rounded-lg transition-all duration-500  h-full z-[3] bg-[#112240] overflow-hidden">
+                {image ? (
+                  <img
+                    className="w-full h-full min-h-[400px] bg-no-repeat rounded-lg relative object-contain z-[4]"
+                    src={image}
+                  />
+                ) : (
+                  <div className="w-full h-full min-h-[400px] rounded-lg bg-gradient-to-br from-themeBlue/20 to-[#112240] flex items-center justify-center text-themeBlue font-mono text-sm">
+                    {title}
+                  </div>
+                )}
+              </div>
             </div>
-          </div>
-        </a>
+          );
+          return demo ? (
+            <a href={demo} target="_blank" rel="noopener noreferrer" className="h-full">
+              {content}
+            </a>
+          ) : (
+            content
+          );
+        })()}
       </div>
     </motion.li>
   );
