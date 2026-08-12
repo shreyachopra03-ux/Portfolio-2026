@@ -29,14 +29,18 @@ const Header = () => {
             transition={{ delay: 0.2, duration: 0.5 }}
             viewport={{ once: true }}
             whileInView={{ opacity: 1, y: 0 }}
-            className="w-14 cursor-pointer transition-all hover:-translate-x-[4px] hover:-translate-y-[4px]"
+            className="flex flex-col items-start cursor-pointer transition-all hover:-translate-x-[4px] hover:-translate-y-[4px] text-white font-fontHeading"
             onClick={toTop}
           >
-            <img
-              src="https://res.cloudinary.com/dljzvv5dh/image/upload/v1709129503/Portfolio/ydrhy6ko8qbiclqxykfi.png"
-              alt="TD"
-              className="w-full h-full transition-all hover:drop-shadow-buttonShadow"
-            />
+            <span
+              className="font-semibold leading-none"
+              style={{ fontSize: "1.75rem", letterSpacing: "-0.06em" }}
+            >
+              SC
+            </span>
+            <span className="text-[10px] font-medium tracking-wide text-secondaryText">
+              Shreya Chopra
+            </span>
           </motion.div>
           <div className="hidden items-center md:flex">
             <ol className={olStyle}>
@@ -64,7 +68,7 @@ const Header = () => {
             </ol>
             <ButtonLink
               content="Resume"
-              url="https://docs.google.com/document/d/1y01YQ-luz50oUWdPYHWLLUC70KulS7nU600p3KfAO8Y/edit?usp=sharing"
+              url="/src/assets/Shreya_Chopra_Resume.pdf"
               classNameBox="ml-[15px]"
             />
           </div>
