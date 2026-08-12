@@ -15,7 +15,7 @@ const Contact = () => {
         <span className="text-base relative bottom-0 -mb-[3px] mr-[5px] sm:mr-[10px] sm:mb-0">
           04.
         </span>
-        Whats's Next?
+        What&apos;s Next?
       </h2>
       <h2 className="font-fontHeading text-primaryText text-clamp3 mb-[10px] font-semibold leading-[1.1]">
         Get In Touch
