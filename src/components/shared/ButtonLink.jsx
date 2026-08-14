@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import PropTypes from "prop-types";
 
 const ButtonLink = ({
   content,
@@ -19,11 +20,20 @@ const ButtonLink = ({
         href={url}
         className={`font-mono text-themeBlue bg-transparent border border-themeBlue rounded-[4px] py-[10px] px-4 text-[14px] transition-all ease-in-out duration-300 hover:shadow-buttonShadow ${classNameBtn}`}
         target={blank ? "_blank" : "_self"}
+        rel={blank ? "noopener noreferrer" : undefined}
       >
         {content}
       </a>
     </motion.div>
   );
+};
+
+ButtonLink.propTypes = {
+  content: PropTypes.node.isRequired,
+  url: PropTypes.string.isRequired,
+  classNameBtn: PropTypes.string,
+  classNameBox: PropTypes.string,
+  blank: PropTypes.bool,
 };
 
 export default ButtonLink;
