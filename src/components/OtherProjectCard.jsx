@@ -1,6 +1,7 @@
 import { CiFolderOn } from "react-icons/ci";
 import { FiExternalLink, FiGithub } from "react-icons/fi";
 import { motion } from "framer-motion";
+import PropTypes from "prop-types";
 
 const OtherProjectCard = ({
   project: { title, description, tags, github, demo },
@@ -66,6 +67,16 @@ const OtherProjectCard = ({
       </div>
     </motion.li>
   );
+};
+
+OtherProjectCard.propTypes = {
+  project: PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    tags: PropTypes.arrayOf(PropTypes.string).isRequired,
+    github: PropTypes.string,
+    demo: PropTypes.string,
+  }).isRequired,
 };
 
 export default OtherProjectCard;
