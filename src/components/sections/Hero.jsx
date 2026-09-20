@@ -50,7 +50,7 @@ const Hero = () => {
           </motion.p>
           <ButtonLink
             content="Checkout My Resume!"
-            url="/src/assets/Shreya_Chopra_Resume.pdf"
+            url="/Shreya_Chopra_Resume.pdf"
             classNameBox="mt-[50px]"
             classNameBtn="px-[1.75rem] py-[1rem] text-[14px] tracking-wide"
             blank={true}

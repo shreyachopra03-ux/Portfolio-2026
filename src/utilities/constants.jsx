@@ -54,7 +54,7 @@ export const social_links = [
     name: "Twitter",
   },
   {
-    url: "/src/assets/Shreya_Chopra_Resume.pdf",
+    url: "/Shreya_Chopra_Resume.pdf",
     icon: <IoMdDocument className="w-[22px] h-[22px]" />,
     name: "Resume",
   },

@@ -68,7 +68,7 @@ const Header = () => {
             </ol>
             <ButtonLink
               content="Resume"
-              url="/src/assets/Shreya_Chopra_Resume.pdf"
+              url="/Shreya_Chopra_Resume.pdf"
               classNameBox="ml-[15px]"
             />
           </div>
