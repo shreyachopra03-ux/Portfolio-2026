@@ -2,8 +2,8 @@ import { LuLinkedin, LuGithub } from "react-icons/lu";
 import { FaXTwitter } from "react-icons/fa6";
 import { IoMdDocument } from "react-icons/io";
 import archiveImg from "../assets/archive.png";
-import sandburgsImg from "../assets/sandburgs.png";
-import flixverseImg from "../assets/flixVerse.png";
+import prepsyncImg from "../assets/prepsync.png";
+import foundrscoreImg from "../assets/foundrscore.png";
 export const navLinks = [
   {
     url: "/#",
@@ -62,31 +62,31 @@ export const social_links = [
 
 export const mainProjects = [
   {
+    title: "PrepSync",
+    description:
+      "An AI interview prep generator that turns a job description and company URL into a structured, editable kit of questions, flashcards, and a study schedule. Powered by a multi-stage pipeline with a 3-provider LLM fallback (NVIDIA → Groq → Gemini) and a coverage check that maps every requirement to a question, with Better Auth (PBKDF2, Google OAuth) on a serverless Cloudflare Workers + D1 backend.",
+    tags: ["Next.js", "TypeScript", "Cloudflare Workers", "D1", "Better Auth"],
+    github: "https://github.com/shreyachopra03-ux/PrepSync",
+    demo: "https://prep-sync-web.vercel.app/",
+    image: prepsyncImg,
+  },
+  {
+    title: "FoundrScore",
+    description:
+      "An AI startup-idea validator that scores ideas on 5 metrics and delivers a verdict, competitor analysis, and budget runway. Built on a multi-LLM router with automatic fallback (Groq → Gemini → Llama 3.1), Zod-validated LLM output, IP-hashed rate limiting, and an animated Framer Motion UI with a shareable PNG verdict card.",
+    tags: ["React", "TypeScript", "Node.js", "Express", "MongoDB", "Groq", "Gemini API", "Zod"],
+    github: "https://github.com/shreyachopra03-ux/FoundrScore",
+    demo: "",
+    image: foundrscoreImg,
+  },
+  {
     title: "Archive",
     description:
       "A full-stack media management platform built with the MERN stack and TypeScript across the entire pipeline. Features an asynchronous server-side video assembly pipeline using FFmpeg, secure authentication via Clerk, and a seamless media upload flow through Cloudinary, all wrapped in a premium archive-themed UI.",
     tags: ["MERN Stack", "TypeScript", "Cloudinary", "Clerk", "FFmpeg"],
     github: "https://github.com/shreyachopra03-ux/Timeline_Project",
-    demo: "https://timeline-project-eosin.vercel.app/login",
+    demo: "https://timeline-project-eosin.vercel.app/",
     image: archiveImg,
-  },
-  {
-    title: "Sandburgs",
-    description:
-      "A high-performance food delivery web app built with React and TypeScript for type safety and scalable architecture. Uses Redux Toolkit for centralized state management and real-time cart updates, with lazy loading and custom hooks to significantly cut initial load times.",
-    tags: ["React", "TypeScript", "Tailwind CSS", "Redux Toolkit"],
-    github: "https://github.com/shreyachopra03-ux/Namaste-React-Series",
-    demo: "https://namaste-react-series-pi.vercel.app/",
-    image: sandburgsImg,
-  },
-  {
-    title: "FlixVerse",
-    description:
-      "A movie discovery platform built with React and the TMDB API, featuring dynamic data fetching and horizontal scrolling. Integrates the OpenAI GPT API for personalized AI movie recommendations, with Firebase powering real-time authentication.",
-    tags: ["React", "Firebase", "TMDB API", "OpenAI GPT API", "Tailwind CSS"],
-    github: "https://github.com/shreyachopra03-ux/netflix_project",
-    demo: "https://netflixproject-mu.vercel.app/",
-    image: flixverseImg,
   },
 ];
 
