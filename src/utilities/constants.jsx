@@ -76,7 +76,7 @@ export const mainProjects = [
       "An AI startup-idea validator that scores ideas on 5 metrics and delivers a verdict, competitor analysis, and budget runway. Built on a multi-LLM router with automatic fallback (Groq → Gemini → Llama 3.1), Zod-validated LLM output, IP-hashed rate limiting, and an animated Framer Motion UI with a shareable PNG verdict card.",
     tags: ["React", "TypeScript", "Node.js", "Express", "MongoDB", "Groq", "Gemini API", "Zod"],
     github: "https://github.com/shreyachopra03-ux/FoundrScore",
-    demo: "",
+    demo: "https://foundr-score.vercel.app/",
     image: foundrscoreImg,
   },
   {
